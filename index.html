@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joozy Bros - No Cap. Just Juice.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #fff7ed, #fff9c4);
+      color: #333;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 3rem;
+      color: #ea580c;
+      font-weight: 900;
+    }
+    p.tagline {
+      font-size: 1.25rem;
+      color: #6b7280;
+    }
+    .card {
+      background: #fff;
+      border-radius: 1.5rem;
+      padding: 1.5rem;
+      max-width: 400px;
+      margin: 2rem auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+    }
+    .card h2 {
+      color: #c2410c;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    .card p {
+      color: #4b5563;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    .price {
+      color: #16a34a;
+      font-weight: 700;
+      font-size: 1.25rem;
+    }
+    .button {
+      background-color: #ea580c;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .subscribe {
+      margin-top: 3rem;
+    }
+    .subscribe input {
+      padding: 0.5rem;
+      width: 250px;
+      border: 1px solid #ddd;
+      border-radius: 0.5rem;
+    }
+    .footer {
+      margin-top: 4rem;
+      font-size: 0.875rem;
+      color: #9ca3af;
+    }
+    .social-icons a {
+      margin: 0 0.5rem;
+      color: #ea580c;
+      text-decoration: none;
+      font-size: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Joozy Bros</h1>
+  <p class="tagline">No Cap. Just Juice.</p>
+
+  <div class="card">
+    <img src="/juice-bottle.png" alt="Juice Bottle">
+    <h2>Orange Carrot Apple</h2>
+    <p>Fresh, cold-pressed juice blend. Packed with vitamins. Made for the vibe.</p>
+    <p class="price">$4.99</p>
+    <button class="button">Add to Cart</button>
+  </div>
+
+  <div class="subscribe">
+    <h3>Stay in the Loop</h3>
+    <p>Drop your email and never miss a drop or a discount.</p>
+    <input type="email" placeholder="you@email.com">
+    <button class="button">Subscribe</button>
+  </div>
+
+  <div class="footer">
+    <div class="social-icons">
+      <a href="#">📸</a>
+      <a href="mailto:info@joozybros.com">✉️</a>
+    </div>
+    &copy; <span id="year"></span> Joozy Bros. All rights reserved.
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
